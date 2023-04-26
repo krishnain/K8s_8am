@@ -2,15 +2,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: jenkins-pod
+  name: tomcat-pod
   labels:
     author: intelliqit
-    type: ci-cd
+    type: appserver
 spec:
   containers:
-    - name: myjenkins
-      image: jenkins/jenkins
-
-
-
-
+    - name: mytomcat
+      image: tomee
+...
