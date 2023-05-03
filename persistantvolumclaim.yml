@@ -1,15 +1,12 @@
-
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: my-pvc
-  labels:
-    author: intelliqit
+  name: task-pv-claim
 spec:
   storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 2Gi
+      storage: 3Gi
